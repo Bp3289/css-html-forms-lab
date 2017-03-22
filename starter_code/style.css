@@ -6,6 +6,11 @@
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
 }
 
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+	margin: 20px 20px;
+}
 
 
 
@@ -17,6 +22,25 @@
 */
 
 /*-------- Main Styles --------*/
+
+#main {
+	position: absolute;
+	left: 20px;
+	right: 0;
+}
+
+.formSection{
+	float: left;
+}
+
+
+
+.results {
+	float: right;
+
+}
+
+
 
 /* 
 	Make the main container the full width of the page.
