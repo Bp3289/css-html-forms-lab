@@ -2,6 +2,7 @@
 * {
 	box-sizing: border-box; 
 	font-family: 'Proza Libre', sans-serif;
+	border-radius: 25px;
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
 }
