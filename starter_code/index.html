@@ -3,6 +3,7 @@
 <head>
 	<title>CSS HTML Forms Lab</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
 </head>
 <body>
 	<section id="main">
@@ -102,37 +103,51 @@
 			results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
 			results.className = 'container results';
 			main.appendChild(results);
-		};
-		/*
-		
-			Make a function that will create <section> element and append it to #main.
-			Give the new <section> classes of "container" and "results"
-			Put an <h1> inside it that says "A True Story:"
-			Don't append it until the form has been submitted.
+		}
 
-		*/
+
 
 
 		$("form").on("submit", function(event){
+			event.preventDefault();
 
 		    // Stop the form from submitting
+		    makeResults();
 
-	    	// Append the new <section> created above.
+		    var name = $('#name').val();
 
-	    	/*
+		    var verb = $('#verb-1').val();
+
+		    var mission2 = $('#mission').val();
+
+		    var sentiment1 = $('input[name=sentiment]:checked').val();
+
+		    var noun1 = $('#noun-1').val();
+
+		    var sentiment2 = $('input[name=adjective-2]:checked').map(function() {return this.value;}).get().join(', ');
+
+		    var noun2 = $('#noun-2').val();
+
+
+		    $('.results').append("<p>").append("Once upon a time there was a Developer named" + " "  +  name + ". " + name + " " + "came to General Asssembly to" + " " + verb + " " + "the great mountain of programming knowledge." + "  " + mission2 + "  " + name + " " + "shouted" + " . " + "Though" + " " + sentiment1 + " "  + name + "was able to overcome all obstacles with the power of their" + noun1 + " . " + "In the end, their success can be contributed entirely to their" + sentiment2 + " " + noun2);
+	    	 
+		 
+	    	
 			
+				/*
 				For each value entered into a form input, add the input to the corresponding sentence, then append the text into the results section:
+				
+				<form>
+				<input type="text" value="Once upon a time there was a Developer named NAME.">
 
-				"Once upon a time there was a Developer named NAME."
-
-				"NAME came to General Asssembly to VERB1 the great mountain of programming knowledge."
+				<input type="text" value="NAME came to General Asssembly to VERB1 the great mountain of programming knowledge.">
 
 				""MISSION", NAME shouted."
 	
 				"Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN."
 
 				"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
-
+				</form>
 	    	*/ 
 		});
 	</script>
