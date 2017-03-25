@@ -30,12 +30,20 @@ h1 {
 
 .formSection {
 	float: left;
+	margin-left: 100px;
+	
+}
+
+.formGroup {
+	padding: 10px;
 }
 
 
 .results {
 	float: right;
-	width: 300px;
+	width: 400px;
+	background-color: rgb(136, 172, 62);
+	margin-right: 200px;
 
 }
 
