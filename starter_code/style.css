@@ -31,18 +31,34 @@ h1 {
 .formSection {
 	float: left;
 	margin-left: 100px;
-	background-color: rgb(224, 224, 224);
+	background-color: #E3E6EC;
 }
 
 .formGroup {
 	padding: 10px;
 }
 
+#name {
+	border-radius: 5px;
+	padding: 20px, 20px;
+	box-sizing: border-box;
+	margin: 8px 0;
+	width: 300px;
+	display: inline-block;
+	
+}
+
+ label {
+	position: absolute;
+	
+}
+
+
 
 .results {
 	float: right;
 	width: 400px;
-	background-color: rgb(136, 172, 62);
+	background-color: #C8DBB3;
 	margin-right: 200px;
 	padding: 30px;
 
