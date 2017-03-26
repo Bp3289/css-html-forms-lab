@@ -36,15 +36,28 @@ h1 {
 
 .formGroup {
 	padding: 10px;
+	margin:20px;
 }
 
 #name {
 	border-radius: 5px;
 	padding: 20px, 20px;
 	box-sizing: border-box;
-	margin: 8px 0;
+	margin: 20px 0;
 	width: 300px;
 	display: inline-block;
+	height: 30px;
+	
+}
+
+#verb-1 {
+	border-radius: 5px;
+	padding: 20px, 20px;
+	box-sizing: border-box;
+	margin: 20px 0;
+	width: 300px;
+	display: inline-block;
+	height: 30px;
 	
 }
 
@@ -58,7 +71,7 @@ h1 {
 .results {
 	float: right;
 	width: 400px;
-	background-color: #C8DBB3;
+	background-color: #C8DBB3,;
 	margin-right: 200px;
 	padding: 30px;
 
