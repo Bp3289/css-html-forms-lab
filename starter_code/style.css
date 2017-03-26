@@ -112,6 +112,17 @@ h1 {
 	height: 30px;
 }
 
+input[type=submit] {
+	float: right;
+	margin-bottom: 40px;
+	font-weight: bold;
+	background-color: rga(39, 208, 127);
+	height: 50px;
+	width: 80px;
+	box-sizing: border-box;
+
+}
+
  label {
 	position: absolute;
 	
@@ -122,7 +133,7 @@ h1 {
 .results {
 	float: right;
 	width: 400px;
-	background-color: #C8DBB3,;
+	background-color: #C8DBB3;
 	margin-right: 200px;
 	padding: 30px;
 
