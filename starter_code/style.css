@@ -79,7 +79,29 @@ h1 {
 	padding: 10px;
 	
 }
+
+#radio1 {
+	margin-right: 10px;
+}
  
+#noun-1 {
+	border-radius: 5px;
+	padding: 20px, 20px;
+	box-sizing: border-box;
+	margin: 20px 0;
+	width: 300px;
+	display: inline-block;
+	height: 30px;
+}
+
+.checkboxes {
+	padding: 30px;
+}
+
+.check {
+	padding: 10px;
+}
+
  label {
 	position: absolute;
 	
