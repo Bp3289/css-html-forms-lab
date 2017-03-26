@@ -61,6 +61,25 @@ h1 {
 	
 }
 
+#mission {
+	border-radius: 5px;
+	padding: 20px, 20px;
+	box-sizing: border-box;
+	margin: 20px 0;
+	width: 300px;
+	display: inline-block;
+	height: 60px;
+}
+
+.radioButtons {
+	padding: 30px;
+}
+
+.radio {
+	padding: 10px;
+	
+}
+ 
  label {
 	position: absolute;
 	
